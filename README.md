@@ -5,6 +5,13 @@ This is a README for the project
 Im going to assume that you are smarter than me(me when I started the project I mean),  
 if you need more detailed info for the intalation process, read the Detailed_Guide.md
 
+### Features 
+Shows CPU temp in both numbers and a graph.
+
+Shows GPU temp in both numbers and a graph.
+
+Shows time.
+
 ### How it was created
 
 I saw a review of Valve's steam machine, and noticed that they have a  
@@ -65,9 +72,3 @@ Then plug in the cable, and upload the code to raspberry pi.
 After that, to test it all(without restearting your system) justrun the update file in cmd and watch the magic happen.
 
 
-### Features 
-Shows CPU temp in both numbers and a graph.
-
-Shows GPU temp in both numbers and a graph.
-
-Shows time.
