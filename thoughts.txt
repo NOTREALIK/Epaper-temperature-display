@@ -1,0 +1,23 @@
+So there are 49 possible values of the x position. each of them is going from 0 to 48 included.
+the x value should be given a plus one (damn need a paper to do the math.). So the formula for x is:
+x(49) = 1 + 3n (basic 9th grade math out here, not in coding format, but remember that n can be 0).
+
+so lets name the array n, so people who graduated 9th grade will understand. 
+
+the n is the number of the dot, assigned in the array earlier. That means that the first dot has an x (by x here i mean inside of the usable space) of 1, second 3, third 7 and so on up until 145, borders of that square will touch the borders of the graph. 
+
+
+Then it has to transform that graph x into a real one, by I suppose this formula: cpudotx = cpux(which we calculated earlier, also could be gpux but then the starting x would become 233) + 22(the starting x in which we enter the usable space).
+
+Wait, that doesn't work, because trhat would spawn them left to right, we want it the opposite way, so lets make it this(got a little help from claude(should have done that, I could do that like 2 months ago, just took a break from math.): cpudotX = 22 + (144 - 3 * n);
+
+
+
+
+
+after that we need to calculate y, it is quite different from x, because here it is not guaranteed to be exactly 3 pixels away from the last one, it could be (apparently 1.5 pixels is each step, up or down) so here the first formula(the first formula for x was the x(49)) should be (this one has been provided by claude): cputemp * graphY/cputempmax(for me its 98).
+the next formula is also provided by claude: cpudotY = graphY + graphH - dotY. 
+
+
+
+We need to make the x update every signle time function uptadecputemp() is called, meaning that it needs to contain the cpugraph() function. The cpugraph() function should include these things: Make a partial refresh window and set it to white(already done), then get the cputemp value and calculate the cpudotY and cpudotX, and display.fillRect(cpudotX, cpudotY, 3, 3, GxEPD_BLACK). Thats the whole logic. After that it should move the last cpudotX into the next array slot(actually the previous one). I do not want to think abouy how to do that today. Okay, lets leave this for tommorow me. 
