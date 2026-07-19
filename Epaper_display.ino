@@ -2,10 +2,7 @@
 #include <GxEPD2_3C.h>
 #include <GxEPD2_4C.h>
 #include <GxEPD2_7C.h>
-#include <Fonts/FreeMonoBold9pt7b.h>
 #include <Fonts/pixeldeb8pt7b.h>
-#include <Fonts/pixeldeb28pt7b.h>
-#include <Fonts/pixeldeb14pt7b.h>
 #include <Fonts/pixeldeb__1_40pt7b.h>
 #define CS_PIN (17)
 #define BUSY_PIN (14)
