@@ -47,28 +47,54 @@ Some TheFillament PLA HS
 
 ### How to set up
 
-If using the same parts as me:  
+Before we start, by script I mean update.pyw file, and by program I mean the .ide file.
 
-Install all the needed libraries(they are mentioned in the python script).
+#### Things to do regardless if you are using the same parts as me
 
-Connect the pins to the ones marked in teh code(not neccesarry for most of them, some can be changed in code ofc)
+Install all the needed libraries(they are mentioned in the script).
 
-3d print out the case with the .step file linked
-
-Glue the parts to one another in the spots they should go (it is assembled in the file, so you can use it as guidance).
-
-Install Libre Hardware Monitor and run the server
-
-Schedule the launch of LHM in the Task Scheduler on boot.
-
-Test if the script is working for you(I mean the update.pyw).
+Test if the script is working for you.
 
 If it does, schedule it in the Task Scheduler on boot, but with some delay(mine is set to 30 seconds, just for sure).
 
 If not, you might need to search for the right ID in the json file and change it in the script.
 
-Then plug in the cable, and upload the code to raspberry pi.
-
-After that, to test it all(without restearting your system) justrun the update file in cmd and watch the magic happen.
+Install Libre Hardware Monitor and run the server.
 
 
+**Only do next steps, once evetything works**
+
+Schedule the launch of LHM in the Task Scheduler on boot.
+
+Schedule the run of the script 30 seconds after boot(on boot, with some delay).
+##### If using the same parts as me:  
+
+
+Connect the pins to the ones marked in the code(not neccesarry for most of them, some can be changed in code ofc)
+
+After that, to test it all(without restearting your system) just run the update file in cmd and watch the magic happen.
+
+3d print out the case with the .step file linked
+
+obviously test fit it.
+
+Glue the parts to one another in the spots they should go (it is assembled in the file, so you can use it as guidance).
+
+
+### If you dont use the same parts as me
+
+Get the display working using the pre made libraries.
+
+Paste the lines needed for the display to work into the code.
+
+If the resolution(Im using the 400 by 300 one) is not the same,  
+than adjust the basic layout function and the partial refresh window coordinates.
+
+You might also need to adjust the formula to the graph coordinates you use(both formulas are published in the thoughts.txt file).
+
+Design a specific case for your screen mounting style  
+(for example Ive heard that on Waveshares displays holes are a different size).
+
+Testfit it and if fits glue it together.
+
+**Congrats, you have completed the project!**
