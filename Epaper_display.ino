@@ -39,10 +39,9 @@ void setup() {
   display.setRotation(180);
   display.firstPage();
   do{
-    routineRefresh();
     display.fillScreen(GxEPD_WHITE);
-    basic_layout(); 
   } while (display.nextPage());
+  routineRefresh();
 }
 
 
@@ -172,7 +171,11 @@ void routineRefresh() {
     display.fillScreen(GxEPD_WHITE);
   } while (display.nextPage());
   
-  basic_layout(); 
+  display.firstPage();
+  do {
+    display.fillScreen(GxEPD_WHITE);
+    basic_layout();
+  } while (display.nextPage());
 }
 
 void loop() {
