@@ -22,11 +22,11 @@ When installed, answer the questions that you are asked and then close thee wind
 
 Open cmd with admin rights, then use these commands:
 
-pip install time
-pip install daytime
-pip install serial
-pip install requests
-pip install pyserial
+pip install time  
+pip install daytime  
+pip install serial  
+pip install requests  
+pip install pyserial  
 
 Don't worry if any of those are already pre installed on your device.
 
