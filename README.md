@@ -3,7 +3,7 @@
 This is a README for the project
 
 Im going to assume that you are smarter than me(me when I started the project I mean),  
-if you need more detailed info for the intalation process, read the [GUIDE](Detailed_guide.md)
+if you need more detailed info for the intalation process, read the [Detailed guide](GUIDE/Detailed_guide.md)
 ### Features 
 Shows CPU temp in both numbers and a graph.
 
