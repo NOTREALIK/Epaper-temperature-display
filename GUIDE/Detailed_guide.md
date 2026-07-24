@@ -131,4 +131,4 @@ Click OK.
 **After this every time you turn on your pc, after 30 seconds your display should show you the info. If it doesnt, or you have some kind of questions, contact me.**
 
 ## 8. Case
-This one is entirely up to you, you an use mine, you can create your own.
+This one is entirely up to you, you can use mine, you can create your own.
