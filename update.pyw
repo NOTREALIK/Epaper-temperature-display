@@ -32,4 +32,4 @@ while True:
     message = f"CPU:{cpu_temp},GPU:{gpu_temp},TIME:{time_str}"
     print(message)
     ser.write((message + "\n").encode())
-    time.sleep(2)
+    time.sleep(3)
